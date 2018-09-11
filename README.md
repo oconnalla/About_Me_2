@@ -1,2 +1,2 @@
 # About_Me_2
-About Me
+About Michael Lyon, a site about me.
