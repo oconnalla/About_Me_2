@@ -4,15 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us</title>
+    <title>The Lyon Quiz</title>
+    <link href = "style.css" type = "text/css" rel = "stylesheet"/>
 </head>
 <body>
-    <h1>About Michael</h1>
+    <h1 class = "sectionHeading">All About Michael</h1>
 
-    <ol>
-        <li>Do I like to ski the globe?</li>\
-        <li>Do I have any pets?</li>
+    <div class = "list">
+    <ol id = "questionList">
+        <li id = "basketball">Have you ever played basketball?</li>
+        <li id = "backpacking">Have you ever been backpacking in the wilderness?</li>
+        <li id = "milesDavis">Have you ever listened to music by Miles Davis?</li>
+        <li id = "floating">Have you ever been in a sensory deprivation chamber?</li>
+        <li id = "yoga">Are you one of the 35 million Americans that went to a yoga class last year? </li>
     </ol>
+    </div>
+
+
+<script>
+        var noInput = 'Seinfeld says: Oh come on! '
+        var userNameQuestion = 'Hello and welcome. What\'s your name?';
+        var userName = prompt(userNameQuestion);
+        console.log('the userName is: ' + userName);
+        alert('Nice to meet you, ' + userName+ '. I\'m Michael, and I\'m going to ask you five oddball questions that you have to answer \'yes\' or \'no\'. Then I\'ll tell you what I think and you\'ll have a big ol\' window into my personality.');
+
+        var basketballQuestion = 'Have you ever played basketball?'
+        var basketball = prompt(userName.concat(', ', basketballQuestion));
+        basketball = (basketball.toLowerCase());
+        console.log(basketballQuestion.concat(': ', basketball));
+            if(basketball === 'yes'){
+                alert('Cool. let\'s talk hoops sometime. Basketball is a big part of my life. I played competitively from the time I could walk until my Sophomore year of college. My life journey is the conditional expression: if basketball is true Michael runs fine, if basketball is not true then Michael is undefined. This is the case whether I like it or not, so I\'ve come to accept that my life is best lived playing basketball');    
+            } else if (basketball === 'no'){
+                alert('No way, ' + userName + '! Well, sports are pretty crazy and I don\'t blame ya. Basketball is a beautiful, soulful game. A lot of people take it too seriously, but it\'s really all good.');
+            } else {
+                alert(noInput);
+            }
+
+        var backpackingQuestion = 'have you ever been backpacking in the wilderness?'
+        var backpacking = prompt(userName.concat(', ', backpackingQuestion));
+        backpacking = (backpacking.toLowerCase());
+        console.log(backpackingQuestion.concat(': ', backpacking));
+            if(backpacking === 'yes'){
+                alert('Now we\'re talkin\'! As a native of the PNW i\'ve been lucky to explore some of the greatest forests on Earth. We should talk about adventures sometime. I\'m always happy to bring along an atlas.');    
+            } else if (backpacking === 'no'){
+                alert('Oh ' + userName + ' you must! I would love to talk sometime so I can encourage you to take a little trip. It is really something you should do! We have globally renowned backpacking destinations all over the state.');
+            } else {
+                alert(noInput);
+            }
+
+        var milesDavisQuestion = 'Have you ever listened to music by Miles Davis?'
+        var milesDavis = prompt(milesDavisQuestion);
+        milesDavis = (milesDavis.toLowerCase());
+        console.log(milesDavisQuestion.concat(': ', milesDavis));
+            if(milesDavis === 'yes'){
+                alert('I\'d love to know your favorite recording, ' + userName + '. Mine is In a Silent Way, which is also my favorite piece of recorded music. Learning to play the strucutral chords of \'Kind of Blue\' in their entirety is my greatest musical acheivement.');
+            } else if (milesDavis === 'no'){
+                alert('If you don\'t listen to jazz, Miles is a great place to start and end. His music means a lot to me and is full of humanity. If interested, check out the song \'Flamenco Sketches\' the next time you are studying.');
+            } else {
+                alert(noInput);
+            }
+
+        var floatQuestion = 'Have you ever been in a sensory deprivation chamber?';
+        var floating = prompt(floatQuestion);
+        floating = (floating.toLowerCase());
+        console.log(floatQuestion.concat(': ', floating));
+            if(floating === 'yes'){
+                alert('Sweet! How was your float? I moved to Seattle to help found the company Urban Float. Unfortaunately I lost my ownership stake in a messy business breakup. That said, I still love to float and have spent over 200 hours in the tank. If I ever have enough start up capital I\'m definitely going to try starting my own place.');
+            } else if (floating === 'no'){
+                alert('No? Ever heard of it? I know it sounds a little weird, maybe scary, possibly threatening. But it\'s actually really cool. Essentially you lie weightless in a pool of saltwater, floating like a cork in zero gravity. There are no lights, and with your ears submerged in the saline solution sound disappears. The water is the same temperature as your skin, so the sense of seperation between the water and your body is imperceptible. If you\'ve been considering it I can\'t recommend it enough. I originally moved to Seattle to help start a float spa company.');
+            } else {
+                alert(noInput);
+            }
+        var yogaQuestion = 'Are you one of the 35 million Americans that went to a yoga class last year?';
+        var yoga = prompt(yogaQuestion);
+        yoga = (yoga.toLowerCase());
+        console.log(yogaQuestion.concat(': ', yoga));
+            if(yoga === 'yes'){
+                alert('Cool, me too. Yoga is my life challenge and something I prioritize. I have been taking it slow this summer as I play lots of basketball, but this fall is calling for some deep exploration on the mat.');
+            } else if (yoga === 'no'){
+                alert('I can\'t blame ya ' + userName + '.' + 'while yoga is important in my life, I\'m sometimes amused by the culture surrounding the practice.');
+            }
+</script>
     
 </body>
 </html>
