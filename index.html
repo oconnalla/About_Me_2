@@ -20,16 +20,27 @@
     </ol>
     </div>
 
-
 <script>
-        var noInput = 'Seinfeld says: Oh come on! '
+        var noInput = 'Seinfeld says Oh Come On! Answer yes or no!'; 
         var userNameQuestion = 'Hello and welcome. What\'s your name?';
-        var userName = prompt(userNameQuestion);
+        var userName;
+            while(!userName){
+                userName = prompt(userNameQuestion);
+                if (!userName){
+                    alert(noInput);
+                }
+            };
         console.log('the userName is: ' + userName);
         alert('Nice to meet you, ' + userName+ '. I\'m Michael, and I\'m going to ask you five oddball questions that you have to answer \'yes\' or \'no\'. Then I\'ll tell you what I think and you\'ll have a big ol\' window into my personality.');
-
+//basketball
         var basketballQuestion = 'Have you ever played basketball?'
-        var basketball = prompt(userName.concat(', ', basketballQuestion));
+        var basketball;
+            while(!basketball){
+                basketball = prompt(userName.concat(', ', basketballQuestion));
+                if (!basketball){
+                    alert(noInput);
+                }
+            };
         basketball = (basketball.toLowerCase());
         console.log(basketballQuestion.concat(': ', basketball));
             if(basketball === 'yes'){
@@ -39,9 +50,15 @@
             } else {
                 alert(noInput);
             }
-
+//backpacking
         var backpackingQuestion = 'have you ever been backpacking in the wilderness?'
-        var backpacking = prompt(userName.concat(', ', backpackingQuestion));
+        var backpacking;
+            while(!backpacking){
+                backpacking = prompt(userName.concat(', ', backpackingQuestion));
+                if (!backpacking){
+                    alert(noInput);
+                }
+            };
         backpacking = (backpacking.toLowerCase());
         console.log(backpackingQuestion.concat(': ', backpacking));
             if(backpacking === 'yes'){
@@ -51,9 +68,15 @@
             } else {
                 alert(noInput);
             }
-
+//miles
         var milesDavisQuestion = 'Have you ever listened to music by Miles Davis?'
-        var milesDavis = prompt(milesDavisQuestion);
+        var milesDavis;
+            while(!milesDavis){
+                milesDavis = prompt(milesDavisQuestion);
+                if (!milesDavis){
+                    alert(noInput);
+                }
+            };
         milesDavis = (milesDavis.toLowerCase());
         console.log(milesDavisQuestion.concat(': ', milesDavis));
             if(milesDavis === 'yes'){
@@ -63,9 +86,15 @@
             } else {
                 alert(noInput);
             }
-
+//floating
         var floatQuestion = 'Have you ever been in a sensory deprivation chamber?';
-        var floating = prompt(floatQuestion);
+        var floating;
+            while(!floating){
+                floating = prompt(floatQuestion);
+                if (!floating){
+                    alert(noInput);
+                }
+            };
         floating = (floating.toLowerCase());
         console.log(floatQuestion.concat(': ', floating));
             if(floating === 'yes'){
@@ -75,8 +104,15 @@
             } else {
                 alert(noInput);
             }
+//suffersoftly
         var yogaQuestion = 'Are you one of the 35 million Americans that went to a yoga class last year?';
-        var yoga = prompt(yogaQuestion);
+        var yoga;
+            while(!yoga){
+                yoga = prompt(yogaQuestion);
+                if (!yoga){
+                    alert(noInput);
+                }
+            };
         yoga = (yoga.toLowerCase());
         console.log(yogaQuestion.concat(': ', yoga));
             if(yoga === 'yes'){
