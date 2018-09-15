@@ -8,119 +8,205 @@
     <link href = "style.css" type = "text/css" rel = "stylesheet"/>
 </head>
 <body>
-    <h1 class = "sectionHeading">All About Michael</h1>
+    <h1 class = "sectionHeading">Some Things About the Developer:</h1>
 
     <div class = "list">
-    <ol id = "questionList">
-        <li id = "basketball">Have you ever played basketball?</li>
-        <li id = "backpacking">Have you ever been backpacking in the wilderness?</li>
-        <li id = "milesDavis">Have you ever listened to music by Miles Davis?</li>
-        <li id = "floating">Have you ever been in a sensory deprivation chamber?</li>
-        <li id = "yoga">Are you one of the 35 million Americans that went to a yoga class last year? </li>
+    <ul id = "biographyList">
+        <li>born in McAllen TX</li>
+        <li>enjoys canned peaches, whiskey, and espresso</li>
+        <li>university of Oregon. english and spanish.</li>
+        <li>once hitch-hiked from Arizona to Oregon</li>
+        <li>basketball player</li>
+        <li>outdoor adventurer</li>
+        <li>student</li>
+    </ul>
+    </div>
+    <div>
+    <ol id ="favorite works">
+        <li>East of Eden - Steinbeck</li>
+        <li>The Road - McCarthy</li>
+        <li>Instructions to the Tenzo - Dogen</li>
+        <li>In a Silent Way - Miles Davis</li>
+        <li>Endtroducing - DJ Shadow</li>
+        <li>Hoop Dreams - Film, James & Marx</li>
+        <li>Seinfeld - Television, Seinfeld & David</li>
+        <li>Trout Mask Replica - Captain Beefheart and the Magic Band </li>
+        <li>Donuts - J-Dilla</li>
+        <li>In the Jungle Groove - James Brown</li>
+    </ol>
+    </div>
+    <div>
+    <ol id = "ten things id do again">
+        <li>paddle the lake</li>
+        <li>hike the hills</li>
+        <li>cheer on the children</li>
+        <li>plant a tree</li>
+        <li>take a deep breath</li>
+        <li>release the salmon</li>
+        <li>meet the buddha</li>
+    </ol>
+    </div>
+    <div>  
+    <ol id ="top things i want to do next">
+        <li>ski the globe</li>
+        <li>eat some sushi</li>
+        <li>take a nap</li>
+        <li>run through a field</li>
+        <li>sesshin</li>
+        <li>read a book</li>
+        <li>saw some wood</li>
+        <li>paddle the lake</li>
+        <li>take an algebra class</li>
+        <li>ask a good question</li>
     </ol>
     </div>
 
 <script>
-        var noInput = 'Seinfeld says Oh Come On! Answer yes or no!'; 
-        var userNameQuestion = 'Hello and welcome. What\'s your name?';
-        var userName;
-            while(!userName){
-                userName = prompt(userNameQuestion);
-                if (!userName){
-                    alert(noInput);
-                }
-            };
-        console.log('the userName is: ' + userName);
-        alert('Nice to meet you, ' + userName+ '. I\'m Michael, and I\'m going to ask you five oddball questions that you have to answer \'yes\' or \'no\'. Then I\'ll tell you what I think and you\'ll have a big ol\' window into my personality.');
-//basketball
-        var basketballQuestion = 'Have you ever played basketball?'
-        var basketball;
-            while(!basketball){
-                basketball = prompt(userName.concat(', ', basketballQuestion));
-                if (!basketball){
-                    alert(noInput);
-                }
-            };
-        basketball = (basketball.toLowerCase());
-        console.log(basketballQuestion.concat(': ', basketball));
-            if(basketball === 'yes'){
-                alert('Cool. let\'s talk hoops sometime. Basketball is a big part of my life. I played competitively from the time I could walk until my Sophomore year of college. My life journey is the conditional expression: if basketball is true Michael runs fine, if basketball is not true then Michael is undefined. This is the case whether I like it or not, so I\'ve come to accept that my life is best lived playing basketball');    
-            } else if (basketball === 'no'){
-                alert('No way, ' + userName + '! Well, sports are pretty crazy and I don\'t blame ya. Basketball is a beautiful, soulful game. A lot of people take it too seriously, but it\'s really all good.');
-            } else {
-                alert(noInput);
-            }
-//backpacking
-        var backpackingQuestion = 'have you ever been backpacking in the wilderness?'
-        var backpacking;
-            while(!backpacking){
-                backpacking = prompt(userName.concat(', ', backpackingQuestion));
-                if (!backpacking){
-                    alert(noInput);
-                }
-            };
-        backpacking = (backpacking.toLowerCase());
-        console.log(backpackingQuestion.concat(': ', backpacking));
-            if(backpacking === 'yes'){
-                alert('Now we\'re talkin\'! As a native of the PNW i\'ve been lucky to explore some of the greatest forests on Earth. We should talk about adventures sometime. I\'m always happy to bring along an atlas.');    
-            } else if (backpacking === 'no'){
-                alert('Oh ' + userName + ' you must! I would love to talk sometime so I can encourage you to take a little trip. It is really something you should do! We have globally renowned backpacking destinations all over the state.');
-            } else {
-                alert(noInput);
-            }
-//miles
-        var milesDavisQuestion = 'Have you ever listened to music by Miles Davis?'
-        var milesDavis;
-            while(!milesDavis){
-                milesDavis = prompt(milesDavisQuestion);
-                if (!milesDavis){
-                    alert(noInput);
-                }
-            };
-        milesDavis = (milesDavis.toLowerCase());
-        console.log(milesDavisQuestion.concat(': ', milesDavis));
-            if(milesDavis === 'yes'){
-                alert('I\'d love to know your favorite recording, ' + userName + '. Mine is In a Silent Way, which is also my favorite piece of recorded music. Learning to play the strucutral chords of \'Kind of Blue\' in their entirety is my greatest musical acheivement.');
-            } else if (milesDavis === 'no'){
-                alert('If you don\'t listen to jazz, Miles is a great place to start and end. His music means a lot to me and is full of humanity. If interested, check out the song \'Flamenco Sketches\' the next time you are studying.');
-            } else {
-                alert(noInput);
-            }
-//floating
-        var floatQuestion = 'Have you ever been in a sensory deprivation chamber?';
-        var floating;
-            while(!floating){
-                floating = prompt(floatQuestion);
-                if (!floating){
-                    alert(noInput);
-                }
-            };
-        floating = (floating.toLowerCase());
-        console.log(floatQuestion.concat(': ', floating));
-            if(floating === 'yes'){
-                alert('Sweet! How was your float? I moved to Seattle to help found the company Urban Float. Unfortaunately I lost my ownership stake in a messy business breakup. That said, I still love to float and have spent over 200 hours in the tank. If I ever have enough start up capital I\'m definitely going to try starting my own place.');
-            } else if (floating === 'no'){
-                alert('No? Ever heard of it? I know it sounds a little weird, maybe scary, possibly threatening. But it\'s actually really cool. Essentially you lie weightless in a pool of saltwater, floating like a cork in zero gravity. There are no lights, and with your ears submerged in the saline solution sound disappears. The water is the same temperature as your skin, so the sense of seperation between the water and your body is imperceptible. If you\'ve been considering it I can\'t recommend it enough. I originally moved to Seattle to help start a float spa company.');
-            } else {
-                alert(noInput);
-            }
-//suffersoftly
-        var yogaQuestion = 'Are you one of the 35 million Americans that went to a yoga class last year?';
-        var yoga;
-            while(!yoga){
-                yoga = prompt(yogaQuestion);
-                if (!yoga){
-                    alert(noInput);
-                }
-            };
-        yoga = (yoga.toLowerCase());
-        console.log(yogaQuestion.concat(': ', yoga));
-            if(yoga === 'yes'){
-                alert('Cool, me too. Yoga is my life challenge and something I prioritize. I have been taking it slow this summer as I play lots of basketball, but this fall is calling for some deep exploration on the mat.');
-            } else if (yoga === 'no'){
-                alert('I can\'t blame ya ' + userName + '.' + 'while yoga is important in my life, I\'m sometimes amused by the culture surrounding the practice.');
-            }
-</script>
+console.log('console is running! your js is active!'); //test the script
+var userNameQuestion = 'hello panda friend. you are a panda friend right? well, the Developer needs some help growing up. he has prepared the ADULT 5000 test to screen applicants to become his adult-life-coach. all you have to do is answer \'yes\' or \'no\' for the first five questions, then endure 2 bonus rounds where you\'ll really be tested. first tell us your name, then get started!';
+var answer = 0;
+var noInput = 'nope! you have to answer yes or no!';     
     
+    var userNameFunction = function(){
+    var username;
+    do{
+        username = prompt(userNameQuestion);
+    }while(!username);
+        alert('Nice to meet you, ' + username+ '. lets go!')
+        return username;
+    }
+
+userNameFunction();
+
+    // var userName;
+    //     do{
+    //         userName = prompt(userNameQuestion);
+    //     } while (!userName);
+    //     alert('Nice to meet you, ' + userName+ '. lets go!');
+    //     console.log('the userName is: ' + userName);
+//decalre the variables that will be used repeatedly in the code
+//create a blank array to store a values
+//create a "solutions" array that contains correct answers
+
+    var q1 = 'should I get a dog?'
+    var a1;
+//run a while loop until input condition is satisfied
+        do{
+            a1 = prompt(q1);
+        }while(!a1){
+            a1 = (a1.toLowerCase()); //convert a1 value to lowercase
+            if (a1 == 'no'){ //run conditions for possible answers
+                alert('it is time for a furry friend')
+            } else if (a1 == 'yes'){
+                alert('you are right. ruff-ruff.');
+                answer += 1;
+            }
+        }
+        console.log(answer); 
+
+    var q2 = 'do I start drinking more wine?';
+    var a2;
+        do{
+            a2 = prompt(q2);
+        }while(!a2){
+            a2 = (a2.toLowerCase());
+            if (a2 == 'no'){
+                alert('it might help me code one day')
+            } else if (a2 == 'yes'){
+                alert('cheers');
+                answer += 1;
+            }
+        }
+        console.log(answer);
+    
+    var q3 = 'are clean clothes really THAT important? ';
+    var a3;
+        do{
+            a3 = prompt(q3);
+        }while(!a3){
+            a3 = (a3.toLowerCase());
+            if (a3 == 'no'){
+                alert('i think my classmates would disagree')
+            } else if (a3 == 'yes'){
+                alert('I see the light!')
+                answer +=1;
+            }
+        }
+        console.log(answer);
+    var q4 = 'do i toss out my SNES?';
+    var a4;
+        do{
+            a4 = prompt(q4);
+        }while(!a4){
+            a4 = (a4.toLowerCase());
+            if (a4 == 'no'){
+                alert('thanks for the help. i think i\'ll keep it')
+                answer +=1;
+            } else if (a4 == 'yes'){
+                alert('trump 2020 eh?')
+            }
+        }
+        console.log(answer);
+    var q5 = 'most importantly, should i stop worrying about all that stuff that happened in the past?';
+    var a5;
+        do{
+            a5 = prompt(q5);
+        } while(!a5){
+            a5 = (a5.toLowerCase());
+            if (a5 == 'no'){
+                alert('maybe this time the loop will work...')
+            } else if (a5 == 'yes'){
+                alert('Baba Ram Dass says Be Here Now')
+                answer +=1;
+            }
+        }
+        console.log(answer);
+
+    alert("thanks for playing. so far you have answered " + answer + " questions correctly. I think you will be a good life-coach. Are you ready for the bonus rounds?");
+    var answer = answer;
+    var numberQuestion = "BONUS ROUND ONE: the Developer would like to go skiing in Japan, but he forgot what time the boat leaves! He just remembers that it was sometime between 1 and 10. The sailors at the dock are skeptical you even have a ticket, and give you four chances to guess the correct departure time. What time do you think it leaves?";
+    var passcode = Math.floor(Math.random()*10);
+    console.log(passcode + ' this is the time');
+
+    var guess = 1;
+        while(guess <= 4){
+            guess++;
+            input = prompt(numberQuestion);
+        if(input == passcode){
+            alert("correct! youre coming with dude!")
+            answer +=1;
+            break;    
+            }
+            if (input > passcode){
+            alert("sailor guy: 'too big!'")
+            }
+            if (input < passcode){
+            alert("sailor gal: 'too small!")
+            }
+        }
+
+    var statesQuestion = "BONUS ROUND TWO: can you guess what other states the Dev has lived in besides washington? There are 3 others and you have 6 tries. thats only a 6% chance though, so the first letters of each state are A, T, and O.";
+    var states = ['Texas', 'Oregon', 'Arkansas'];
+    for(let i = 1; i <= 6; i++){
+        let input = prompt(statesQuestion)
+        if(input === states[0]){
+            alert("Wow, good guess! its really hot there.");
+            answer+=1;
+            break;
+        }
+        if(input === states[1]){
+            alert("Wow, good guess! thats my home.");
+            answer+=1;
+            break;
+        }
+        if(input === states[2]){
+            alert("Wow, good guess! arkansas is beautiful.");
+            answer+=1;
+            break;
+        }
+        console.log("guess number: " + [i]);
+    }
+    alert("congratulations for completing the ADULT 5000! you completed the test with a score of " + answer + " out of 7. You would make an awesome coach. if you want to know more, click OK to see the Dev's name and all his favortie things.");
+</script>        
 </body>
 </html>

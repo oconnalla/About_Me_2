@@ -9,25 +9,3 @@
     width: 350px;
     margin: 10px auto 10px auto;
 }
-
-#questionList {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 20px;
-    padding: 10px auto 20px auto;    
-}
-#basketball {
-    color:black;
-    padding: 10px;
-}
-#backpacking {
-    padding: 10px;
-}
-#milesDavis{
-    padding: 10px;
-}
-#floating{
-    padding: 10px;
-}
-#yoga{
-    padding: 10px;
-}
