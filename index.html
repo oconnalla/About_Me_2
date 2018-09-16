@@ -63,20 +63,22 @@
 
 <script>
 console.log('console is running! your js is active!'); //test the script
-var userNameQuestion = 'hello panda friend. you are a panda friend right? well, the Developer needs some help growing up. he has prepared the ADULT 5000 test to screen applicants to become his adult-life-coach. all you have to do is answer \'yes\' or \'no\' for the first five questions, then endure 2 bonus rounds where you\'ll really be tested. first tell us your name, then get started!';
-var answer = 0;
-var noInput = 'nope! you have to answer yes or no!';     
-    
-    var userNameFunction = function(){
-    var username;
-    do{
-        username = prompt(userNameQuestion);
-    }while(!username);
-        alert('Nice to meet you, ' + username+ '. lets go!')
-        return username;
-    }
 
-userNameFunction();
+
+// var userNameQuestion = ;
+var answer = 0;
+// var noInput = 'nope! you have to answer yes or no!';     
+    
+    // var userNameFunction = function(){
+    // var username;
+    // do{
+    //     username = prompt('hello panda friend. you are a panda friend right? well, the Developer needs some help growing up. he has prepared the ADULT 5000 test to screen applicants to become his adult-life-coach. all you have to do is answer \'yes\' or \'no\' for the first five questions, then endure 2 bonus rounds where you\'ll really be tested. first tell us your name, then get started!');
+    // }while(!username);
+    //     alert('Nice to meet you, ' + username+ '. lets go!')
+    //     return username;
+    // }
+
+// userNameFunction();
 
     // var userName;
     //     do{
@@ -84,129 +86,133 @@ userNameFunction();
     //     } while (!userName);
     //     alert('Nice to meet you, ' + userName+ '. lets go!');
     //     console.log('the userName is: ' + userName);
-//decalre the variables that will be used repeatedly in the code
-//create a blank array to store a values
-//create a "solutions" array that contains correct answers
-
-    var q1 = 'should I get a dog?'
-    var a1;
-//run a while loop until input condition is satisfied
+// decalre the variables that will be used repeatedly in the code
+// create a blank array to store a values
+// create a "solutions" array that contains correct answers
+var dogFunction = function(){
+    var dogQuestion;
         do{
-            a1 = prompt(q1);
-        }while(!a1){
-            a1 = (a1.toLowerCase()); //convert a1 value to lowercase
-            if (a1 == 'no'){ //run conditions for possible answers
+            dogQuestion = prompt('should I get a dog?');
+            }while(!dogQuestion);
+            dogQuestion = (dogQuestion.toLowerCase()); //convert dog value to lowercase
+            if (dogQuestion == 'no'){ 
                 alert('it is time for a furry friend')
-            } else if (a1 == 'yes'){
+            } else if (dogQuestion == 'yes'){
                 alert('you are right. ruff-ruff.');
                 answer += 1;
             }
-        }
+            return dogQuestion;
+        } 
         console.log(answer); 
 
-    var q2 = 'do I start drinking more wine?';
-    var a2;
+var wineQuestion = function(){
+    var wineAnswer;
         do{
-            a2 = prompt(q2);
-        }while(!a2){
-            a2 = (a2.toLowerCase());
-            if (a2 == 'no'){
+            wineAnswer = prompt('do I start drinking more wine?');
+        }while(!wineAnswer);
+            wineAnswer = (wineAnswer.toLowerCase());
+            if (wineAnswer === 'no'){
                 alert('it might help me code one day')
-            } else if (a2 == 'yes'){
+            } else if (wineAnswer === 'yes'){
                 alert('cheers');
                 answer += 1;
-            }
+            } return wineAnswer;
         }
         console.log(answer);
     
-    var q3 = 'are clean clothes really THAT important? ';
-    var a3;
-        do{
-            a3 = prompt(q3);
-        }while(!a3){
-            a3 = (a3.toLowerCase());
-            if (a3 == 'no'){
-                alert('i think my classmates would disagree')
-            } else if (a3 == 'yes'){
-                alert('I see the light!')
-                answer +=1;
-            }
-        }
-        console.log(answer);
-    var q4 = 'do i toss out my SNES?';
-    var a4;
-        do{
-            a4 = prompt(q4);
-        }while(!a4){
-            a4 = (a4.toLowerCase());
-            if (a4 == 'no'){
-                alert('thanks for the help. i think i\'ll keep it')
-                answer +=1;
-            } else if (a4 == 'yes'){
-                alert('trump 2020 eh?')
-            }
-        }
-        console.log(answer);
-    var q5 = 'most importantly, should i stop worrying about all that stuff that happened in the past?';
-    var a5;
-        do{
-            a5 = prompt(q5);
-        } while(!a5){
-            a5 = (a5.toLowerCase());
-            if (a5 == 'no'){
-                alert('maybe this time the loop will work...')
-            } else if (a5 == 'yes'){
-                alert('Baba Ram Dass says Be Here Now')
-                answer +=1;
-            }
-        }
-        console.log(answer);
+    // var q3 = 'are clean clothes really THAT important? ';
+    // var a3;
+    //     do{
+    //         a3 = prompt(q3);
+    //     }while(!a3){
+    //         a3 = (a3.toLowerCase());
+    //         if (a3 == 'no'){
+    //             alert('i think my classmates would disagree')
+    //         } else if (a3 == 'yes'){
+    //             alert('I see the light!')
+    //             answer +=1;
+    //         }
+    //     }
+    //     console.log(answer);
+    // var q4 = 'do i toss out my SNES?';
+    // var a4;
+    //     do{
+    //         a4 = prompt(q4);
+    //     }while(!a4){
+    //         a4 = (a4.toLowerCase());
+    //         if (a4 == 'no'){
+    //             alert('thanks for the help. i think i\'ll keep it')
+    //             answer +=1;
+    //         } else if (a4 == 'yes'){
+    //             alert('trump 2020 eh?')
+    //         }
+    //     }
+    //     console.log(answer);
+    // var q5 = 'most importantly, should i stop worrying about all that stuff that happened in the past?';
+    // var a5;
+    //     do{
+    //         a5 = prompt(q5);
+    //     } while(!a5){
+    //         a5 = (a5.toLowerCase());
+    //         if (a5 == 'no'){
+    //             alert('maybe this time the loop will work...')
+    //         } else if (a5 == 'yes'){
+    //             alert('Baba Ram Dass says Be Here Now')
+    //             answer +=1;
+    //         }
+    //     }
+    //     console.log(answer);
 
-    alert("thanks for playing. so far you have answered " + answer + " questions correctly. I think you will be a good life-coach. Are you ready for the bonus rounds?");
-    var answer = answer;
-    var numberQuestion = "BONUS ROUND ONE: the Developer would like to go skiing in Japan, but he forgot what time the boat leaves! He just remembers that it was sometime between 1 and 10. The sailors at the dock are skeptical you even have a ticket, and give you four chances to guess the correct departure time. What time do you think it leaves?";
-    var passcode = Math.floor(Math.random()*10);
-    console.log(passcode + ' this is the time');
+    // alert("thanks for playing. so far you have answered " + answer + " questions correctly. I think you will be a good life-coach. Are you ready for the bonus rounds?");
+    // var answer = answer;
+    // var numberQuestion = "BONUS ROUND ONE: the Developer would like to go skiing in Japan, but he forgot what time the boat leaves! He just remembers that it was sometime between 1 and 10. The sailors at the dock are skeptical you even have a ticket, and give you four chances to guess the correct departure time. What time do you think it leaves?";
+    (Math.floor(Math.random()*10)+1);
+    // console.log(passcode + ' this is the time');
 
-    var guess = 1;
-        while(guess <= 4){
-            guess++;
-            input = prompt(numberQuestion);
-        if(input == passcode){
-            alert("correct! youre coming with dude!")
-            answer +=1;
-            break;    
-            }
-            if (input > passcode){
-            alert("sailor guy: 'too big!'")
-            }
-            if (input < passcode){
-            alert("sailor gal: 'too small!")
-            }
-        }
+    // var guess = 1;
+    //     while(guess <= 4){
+    //         guess++;
+    //         input = prompt(numberQuestion);
+    //     if(input == passcode){
+    //         alert("correct! youre coming with dude!")
+    //         answer +=1;
+    //         break;    
+    //         }
+    //         if (input > passcode){
+    //         alert("sailor guy: 'too big!'")
+    //         }
+    //         if (input < passcode){
+    //         alert("sailor gal: 'too small!")
+    //         }
+    //     }
 
-    var statesQuestion = "BONUS ROUND TWO: can you guess what other states the Dev has lived in besides washington? There are 3 others and you have 6 tries. thats only a 6% chance though, so the first letters of each state are A, T, and O.";
-    var states = ['Texas', 'Oregon', 'Arkansas'];
-    for(let i = 1; i <= 6; i++){
-        let input = prompt(statesQuestion)
-        if(input === states[0]){
-            alert("Wow, good guess! its really hot there.");
-            answer+=1;
-            break;
-        }
-        if(input === states[1]){
-            alert("Wow, good guess! thats my home.");
-            answer+=1;
-            break;
-        }
-        if(input === states[2]){
-            alert("Wow, good guess! arkansas is beautiful.");
-            answer+=1;
-            break;
-        }
-        console.log("guess number: " + [i]);
-    }
-    alert("congratulations for completing the ADULT 5000! you completed the test with a score of " + answer + " out of 7. You would make an awesome coach. if you want to know more, click OK to see the Dev's name and all his favortie things.");
+    // var statesQuestion = "BONUS ROUND TWO: can you guess what other states the Dev has lived in besides washington? There are 3 others and you have 6 tries. thats only a 6% chance though, so the first letters of each state are A, T, and O.";
+    // var states = ['Texas', 'Oregon', 'Arkansas'];
+    // for(let i = 1; i <= 6; i++){
+    //     let input = prompt(statesQuestion)
+    //     if(input === states[0]){
+    //         alert("Wow, good guess! its really hot there.");
+    //         answer+=1;
+    //         break;
+    //     }
+    //     if(input === states[1]){
+    //         alert("Wow, good guess! thats my home.");
+    //         answer+=1;
+    //         break;
+    //     }
+    //     if(input === states[2]){
+    //         alert("Wow, good guess! arkansas is beautiful.");
+    //         answer+=1;
+    //         break;
+    //     }
+    //     console.log("guess number: " + [i]);
+    // }
+    // alert("congratulations for completing the ADULT 5000! you completed the test with a score of " + answer + " out of 7. You would make an awesome coach. if you want to know more, click OK to see the Dev's name and all his favortie things.");
+// userNameFunction();   
+dogFunction();
+wineQuestion();
+
+   
 </script>        
 </body>
 </html>
